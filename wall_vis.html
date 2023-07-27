@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>wall visualization</title>
+<style> 
+#myDIV {
+  width: 100%;
+  height: 800px;
+  align-items: center;
+  background-image: url("redtile.png");
+  background-repeat:repeat;
+  border-width: 10px;
+  border-color: black;
+}
+img{
+  width:40%;
+  align-items: center;
+  padding-left: 22%;
+  padding-top: 10%;
+}
+</style>
+</head>
+<body>
+<h1>Wall visualization with different tiles</h1>
+
+
+<button onclick="myFunction()">Try it</button>
+
+<div class="sofan" id="myDIV">
+  <div class="row">
+    <div class="column" style="flex: 33.33%;"> 
+  <img style="flex: 33.33%;" src="sofan.png"></div>
+  <div class="column"> 
+  <img style="flex: 33.33%;" src="chair.png"></div>
+</div>
+
+<script>
+function myFunction() {
+   document.getElementById("myDIV").style.backgroundImage = "url(bluetile.png)";
+}
+</script>
+
+</body>
+</html>
